@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Sysfont';
+  src: url("/webfonts/sysfont.woff2") format("woff2"), url("/webfonts/sysfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#player {
+
+  /* working: */
+  width: 500px;
+  position: absolute !important;
+  top: 100px;
+  left: 240px;
+
+  /* not working below */
+  font-family: "Sysfont";
+  cursor: url("/images/cursor_diamond.png") !important;
+
+}
+
+
+.another-div{
+
+  background-color: paleturquoise;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 50px;
+
+  /* not working on player but on other div */
+  font-family: "Sysfont";
+  cursor: url("/images/cursor_diamond.png"), pointer;
+
+}
